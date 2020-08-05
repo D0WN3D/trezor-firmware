@@ -26,8 +26,8 @@ WIDTH = Display.WIDTH
 HEIGHT = Display.HEIGHT
 
 # viewport margins
-VIEWX = const(6)
-VIEWY = const(9)
+VIEWX = const(0)
+VIEWY = const(0)
 
 # channel used to cancel layouts, see `Cancelled` exception
 layout_chan = loop.chan()

@@ -122,7 +122,10 @@ async def handle_Ping(ctx: wire.Context, msg: Ping) -> Success:
         from trezor.messages.ButtonRequestType import ProtectCall
         from trezor.ui.text import Text
 
-        await require_confirm(ctx, Text("Confirm"), ProtectCall)
+        t = Text("CONFIRM")
+        t.normal("Lorem ipsum", "dolot sit amet")
+        await require_confirm(ctx, t, ProtectCall)
+
     return Success(message=msg.message)
 
 
